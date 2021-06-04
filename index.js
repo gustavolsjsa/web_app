@@ -3,9 +3,9 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"Plantas_atlas_1", frames: [[0,0,1080,1920]]},
-		{name:"Plantas_atlas_2", frames: [[0,0,1080,1920]]},
-		{name:"Plantas_atlas_3", frames: [[0,0,1080,1920]]}
+		{name:"index_atlas_1", frames: [[0,0,1080,1920]]},
+		{name:"index_atlas_2", frames: [[0,0,1080,1920]]},
+		{name:"index_atlas_3", frames: [[0,0,1080,1920]]}
 ];
 
 
@@ -42,21 +42,21 @@ p.nominalBounds = new cjs.Rectangle(0,0,1614,3868);
 
 
 (lib.perfil_usuariomdpi = function() {
-	this.initialize(ss["Plantas_atlas_3"]);
+	this.initialize(ss["index_atlas_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.registromdpi = function() {
-	this.initialize(ss["Plantas_atlas_2"]);
+	this.initialize(ss["index_atlas_2"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.splashmdpi = function() {
-	this.initialize(ss["Plantas_atlas_1"]);
+	this.initialize(ss["index_atlas_3"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
@@ -451,11 +451,11 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/CachedBmp_2.png?1622832070327", id:"CachedBmp_2"},
-		{src:"images/CachedBmp_1.png?1622832070327", id:"CachedBmp_1"},
-		{src:"images/Plantas_atlas_1.png?1622832070290", id:"Plantas_atlas_1"},
-		{src:"images/Plantas_atlas_2.png?1622832070290", id:"Plantas_atlas_2"},
-		{src:"images/Plantas_atlas_3.png?1622832070290", id:"Plantas_atlas_3"}
+		{src:"images/CachedBmp_2.png", id:"CachedBmp_2"},
+		{src:"images/CachedBmp_1.png", id:"CachedBmp_1"},
+		{src:"images/index_atlas_1.png", id:"index_atlas_1"},
+		{src:"images/index_atlas_2.png", id:"index_atlas_2"},
+		{src:"images/index_atlas_3.png", id:"index_atlas_3"}
 	],
 	preloads: []
 };
