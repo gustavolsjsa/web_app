@@ -42,7 +42,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,1614,3868);
 
 
 (lib.config_usuariomdpi = function() {
-	this.initialize(ss["usuario_atlas_1"]);
+	this.initialize(ss["usuario_atlas_3"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
@@ -56,7 +56,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,1614,3868);
 
 
 (lib.splashmdpi = function() {
-	this.initialize(ss["usuario_atlas_3"]);
+	this.initialize(ss["usuario_atlas_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
@@ -429,11 +429,11 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/CachedBmp_2.png", id:"CachedBmp_2"},
-		{src:"images/CachedBmp_1.png", id:"CachedBmp_1"},
-		{src:"images/usuario_atlas_1.png", id:"usuario_atlas_1"},
-		{src:"images/usuario_atlas_2.png", id:"usuario_atlas_2"},
-		{src:"images/usuario_atlas_3.png", id:"usuario_atlas_3"}
+		{src:"images/CachedBmp_2.png?1622833871870", id:"CachedBmp_2"},
+		{src:"images/CachedBmp_1.png?1622833871870", id:"CachedBmp_1"},
+		{src:"images/usuario_atlas_1.png?1622833871833", id:"usuario_atlas_1"},
+		{src:"images/usuario_atlas_2.png?1622833871833", id:"usuario_atlas_2"},
+		{src:"images/usuario_atlas_3.png?1622833871834", id:"usuario_atlas_3"}
 	],
 	preloads: []
 };
