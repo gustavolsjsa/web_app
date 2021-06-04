@@ -151,14 +151,14 @@ if (reversed == null) { reversed = false; }
 	var props = new Object();
 	props.mode = mode;
 	props.startPosition = startPosition;
-	props.labels = {menu:47,entrada:48,salida:68,usuario:91,maceta:113,ayuda:135};
+	props.labels = {menu:0,entrada:1,salida:21,usuario:44,maceta:66,ayuda:88};
 	props.loop = loop;
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 
-	this.actionFrames = [47,65,84,106,128,150];
+	this.actionFrames = [0,18,37,59,81,103];
 	// timeline functions:
-	this.frame_47 = function() {
+	this.frame_0 = function() {
 		var _detener = this;
 		_detener.stop();
 		
@@ -179,7 +179,7 @@ if (reversed == null) { reversed = false; }
 		_this.gotoAndPlay('entrada');
 		});
 	}
-	this.frame_65 = function() {
+	this.frame_18 = function() {
 		var _detener = this;
 		_detener.stop();
 		
@@ -207,25 +207,25 @@ if (reversed == null) { reversed = false; }
 		_ayuda.gotoAndPlay('ayuda');
 		});
 	}
-	this.frame_84 = function() {
+	this.frame_37 = function() {
 		var _this = this;
 		_this.gotoAndStop('menu');
 	}
-	this.frame_106 = function() {
+	this.frame_59 = function() {
 		var _this = this;
 		window.open('usuario.html', '_self');
 	}
-	this.frame_128 = function() {
+	this.frame_81 = function() {
 		var _this = this;
 		window.open('maceta.html', '_self');
 	}
-	this.frame_150 = function() {
+	this.frame_103 = function() {
 		var _this = this;
 		window.open('ayuda.html', '_self');
 	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(47).call(this.frame_47).wait(18).call(this.frame_65).wait(19).call(this.frame_84).wait(22).call(this.frame_106).wait(22).call(this.frame_128).wait(22).call(this.frame_150).wait(23));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(18).call(this.frame_18).wait(19).call(this.frame_37).wait(22).call(this.frame_59).wait(22).call(this.frame_81).wait(22).call(this.frame_103).wait(2));
 
 	// interactivo
 	this.btn_hamburguesa = new lib.btn_null();
@@ -248,14 +248,14 @@ if (reversed == null) { reversed = false; }
 	this.btn_usuario.setTransform(358.15,273.8,4.1783,1);
 	new cjs.ButtonHelper(this.btn_usuario, 0, 1, 2, false, new lib.btn_null(), 3);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.btn_hamburguesa}]},47).to({state:[{t:this.btn_hamburguesa},{t:this.btn_usuario},{t:this.btn_maceta},{t:this.btn_ayuda}]},17).to({state:[]},20).to({state:[{t:this.btn_hamburguesa},{t:this.btn_usuario}]},7).to({state:[]},16).to({state:[{t:this.btn_hamburguesa},{t:this.btn_usuario}]},6).to({state:[]},16).to({state:[{t:this.btn_hamburguesa},{t:this.btn_usuario}]},6).to({state:[]},17).wait(21));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.btn_hamburguesa}]}).to({state:[{t:this.btn_hamburguesa},{t:this.btn_usuario},{t:this.btn_maceta},{t:this.btn_ayuda}]},17).to({state:[]},20).to({state:[{t:this.btn_hamburguesa},{t:this.btn_usuario}]},7).to({state:[]},16).to({state:[{t:this.btn_hamburguesa},{t:this.btn_usuario}]},6).to({state:[]},16).to({state:[{t:this.btn_hamburguesa},{t:this.btn_usuario}]},6).to({state:[]},16).wait(1));
 
 	// Barra_menu
 	this.instance = new lib.gr_barra("synched",0);
 	this.instance.setTransform(-400,960);
 	this.instance._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(48).to({_off:false},0).to({x:400},15).wait(5).to({startPosition:0},0).to({x:-400},15).to({_off:true},1).wait(7).to({_off:false,x:400},0).to({x:-400},15).to({_off:true},1).wait(6).to({_off:false,x:400},0).to({x:-400},15).to({_off:true},1).wait(6).to({_off:false,x:400},0).to({x:-400},15).to({_off:true},2).wait(21));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({_off:false},0).to({x:400},15).wait(5).to({startPosition:0},0).to({x:-400},15).to({_off:true},1).wait(7).to({_off:false,x:400},0).to({x:-400},15).to({_off:true},1).wait(6).to({_off:false,x:400},0).to({x:-400},15).to({_off:true},1).wait(6).to({_off:false,x:400},0).to({x:-400},15).to({_off:true},1).wait(1));
 
 	// Barra_gris
 	this.instance_1 = new lib.gr_gris("synched",0);
@@ -263,19 +263,18 @@ if (reversed == null) { reversed = false; }
 	this.instance_1.alpha = 0;
 	this.instance_1._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(48).to({_off:false},0).to({alpha:0.3906},15).wait(5).to({startPosition:0},0).to({alpha:0},15).to({_off:true},1).wait(7).to({_off:false,alpha:0.3906},0).to({alpha:0},15).to({_off:true},1).wait(6).to({_off:false,alpha:0.3906},0).to({alpha:0},15).to({_off:true},1).wait(6).to({_off:false,alpha:0.3906},0).to({alpha:0},15).to({_off:true},2).wait(21));
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(1).to({_off:false},0).to({alpha:0.3906},15).wait(5).to({startPosition:0},0).to({alpha:0},15).to({_off:true},1).wait(7).to({_off:false,alpha:0.3906},0).to({alpha:0},15).to({_off:true},1).wait(6).to({_off:false,alpha:0.3906},0).to({alpha:0},15).to({_off:true},1).wait(6).to({_off:false,alpha:0.3906},0).to({alpha:0},15).to({_off:true},1).wait(1));
 
 	// ayuda
 	this.instance_2 = new lib.ayudamdpi();
 	this.instance_2.setTransform(0,-1);
-	this.instance_2._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(47).to({_off:false},0).wait(104).to({_off:true},1).wait(21));
+	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(105));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(-260,0,1340,1927);
+p.nominalBounds = new cjs.Rectangle(-260,953,1340,974);
 // library properties:
 lib.properties = {
 	id: 'E2B250C286D598489CAF6B8841BE14B8',
@@ -285,9 +284,9 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/CachedBmp_2.png", id:"CachedBmp_2"},
-		{src:"images/CachedBmp_1.png", id:"CachedBmp_1"},
-		{src:"images/ayuda_atlas_1.png", id:"ayuda_atlas_1"}
+		{src:"images/CachedBmp_2.png?1622848992819", id:"CachedBmp_2"},
+		{src:"images/CachedBmp_1.png?1622848992819", id:"CachedBmp_1"},
+		{src:"images/ayuda_atlas_1.png?1622848992792", id:"ayuda_atlas_1"}
 	],
 	preloads: []
 };
