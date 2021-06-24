@@ -27,14 +27,14 @@ lib.ssMetadata = [
 
 
 
-(lib.CachedBmp_32 = function() {
-	this.initialize(img.CachedBmp_32);
+(lib.CachedBmp_212 = function() {
+	this.initialize(img.CachedBmp_212);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,826,2072);
 
 
-(lib.CachedBmp_31 = function() {
-	this.initialize(img.CachedBmp_31);
+(lib.CachedBmp_211 = function() {
+	this.initialize(img.CachedBmp_211);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,1614,3868);
 
@@ -43,7 +43,23 @@ p.nominalBounds = new cjs.Rectangle(0,0,1614,3868);
 	this.initialize(ss["confUsuario_atlas_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
+// helper functions:
 
+function mc_symbol_clone() {
+	var clone = this._cloneProps(new this.constructor(this.mode, this.startPosition, this.loop, this.reversed));
+	clone.gotoAndStop(this.currentFrame);
+	clone.paused = this.paused;
+	clone.framerate = this.framerate;
+	return clone;
+}
+
+function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
+	var prototype = cjs.extend(symbol, cjs.MovieClip);
+	prototype.clone = mc_symbol_clone;
+	prototype.nominalBounds = nominalBounds;
+	prototype.frameBounds = frameBounds;
+	return prototype;
+	}
 
 
 (lib.an_TextInput = function(options) {
@@ -119,10 +135,10 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Layer_1
-	this.instance = new lib.CachedBmp_32();
+	this.instance = new lib.CachedBmp_212();
 	this.instance.setTransform(-356,-864.55,0.5,0.5);
 
-	this.instance_1 = new lib.CachedBmp_31();
+	this.instance_1 = new lib.CachedBmp_211();
 	this.instance_1.setTransform(-400,-967,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.instance}]}).wait(1));
@@ -156,6 +172,20 @@ if (reversed == null) { reversed = false; }
 
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(-78.5,-50,157.1,100.1);
+
+
+(lib.an_Button = function(options) {
+	this.initialize();
+	this._element = new $.an.Button(options);
+	this._el = this._element.create();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,100,22);
+
+p._tick = _tick;
+p._handleDrawEnd = _handleDrawEnd;
+p._updateVisibility = _updateVisibility;
+p.draw = _componentDraw;
+
 
 
 (lib.btn_null_1 = function(mode,startPosition,loop,reversed) {
@@ -266,6 +296,44 @@ if (reversed == null) { reversed = false; }
 
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(0,0,957.9,1920);
+
+
+(lib.mc_componentes = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Layer_1
+	this.instance = new lib.an_Button({'id': '', 'label':'Guardar', 'disabled':false, 'visible':true, 'class':'ui-button'});
+
+	this.instance.setTransform(6.55,246.3,2.42,2.7044,0,0,0,50.1,11.3);
+
+	this.in_usuario = new lib.an_TextInput({'id': 'in_usuario', 'value':'Nombre de usuario', 'disabled':false, 'visible':true, 'class':'ui-textinput'});
+
+	this.in_usuario.name = "in_usuario";
+	this.in_usuario.setTransform(0.6,-237.45,5.813,3.4355,0,0,0,50.1,11);
+
+	this.in_contraseña = new lib.an_TextInput({'id': 'in_contraseña', 'value':'Contraseña', 'disabled':false, 'visible':true, 'class':'ui-textinput'});
+
+	this.in_contraseña.name = "in_contraseña";
+	this.in_contraseña.setTransform(0.6,-54.05,5.813,3.4355,0,0,0,50.1,11);
+
+	this.in_correo = new lib.an_TextInput({'id': 'in_correo', 'value':'Correo electronico', 'disabled':false, 'visible':true, 'class':'ui-textinput'});
+
+	this.in_correo.name = "in_correo";
+	this.in_correo.setTransform(0.6,126,5.813,3.4355,0,0,0,50.1,11);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.in_correo},{t:this.in_contraseña},{t:this.in_usuario},{t:this.instance}]}).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = getMCSymbolPrototype(lib.mc_componentes, new cjs.Rectangle(-293.5,-276.9,587.1,553.5), null);
 
 
 (lib.gr_gris = function(mode,startPosition,loop,reversed) {
@@ -439,20 +507,18 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.mc_menuinf},{t:this.mc_hamburguesa}]},40).wait(44));
 
 	// formulario
-	this.in_correo = new lib.an_TextInput({'id': 'in_correo', 'value':'', 'disabled':false, 'visible':true, 'class':'ui-textinput'});
-
-	this.in_correo.name = "in_correo";
-	this.in_correo.setTransform(565.25,1413.7,5.813,3.4355,0,0,0,50.1,11);
-	this.in_correo._off = true;
-
-	this.timeline.addTween(cjs.Tween.get(this.in_correo).wait(40).to({_off:false},0).wait(44));
-
-	// confUsuario
-	this.instance = new lib.gr_confUsuario("synched",0);
-	this.instance.setTransform(540,960);
+	this.instance = new lib.mc_componentes();
+	this.instance.setTransform(564.65,1287.5,1,1,0,0,0,0,-0.2);
 	this.instance.alpha = 0;
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).to({alpha:1},30).wait(54));
+
+	// confUsuario
+	this.instance_1 = new lib.gr_confUsuario("synched",0);
+	this.instance_1.setTransform(540,960);
+	this.instance_1.alpha = 0;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).to({alpha:1},30).wait(54));
 
 	this._renderFirstFrame();
 
@@ -467,12 +533,13 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/CachedBmp_32.png", id:"CachedBmp_32"},
-		{src:"images/CachedBmp_31.png", id:"CachedBmp_31"},
+		{src:"images/CachedBmp_212.png", id:"CachedBmp_212"},
+		{src:"images/CachedBmp_211.png", id:"CachedBmp_211"},
 		{src:"images/confUsuario_atlas_1.png", id:"confUsuario_atlas_1"},
 		{src:"https://code.jquery.com/jquery-3.4.1.min.js", id:"lib/jquery-3.4.1.min.js"},
 		{src:"components/sdk/anwidget.js", id:"sdk/anwidget.js"},
-		{src:"components/ui/src/textinput.js", id:"an.TextInput"}
+		{src:"components/ui/src/textinput.js", id:"an.TextInput"},
+		{src:"components/ui/src/button.js", id:"an.Button"}
 	],
 	preloads: []
 };

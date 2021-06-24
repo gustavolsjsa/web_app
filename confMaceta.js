@@ -27,26 +27,26 @@ lib.ssMetadata = [
 
 
 
-(lib.CachedBmp_30 = function() {
-	this.initialize(img.CachedBmp_30);
+(lib.CachedBmp_117 = function() {
+	this.initialize(img.CachedBmp_117);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,826,2072);
 
 
-(lib.CachedBmp_29 = function() {
-	this.initialize(img.CachedBmp_29);
+(lib.CachedBmp_116 = function() {
+	this.initialize(img.CachedBmp_116);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,1614,3868);
 
 
-(lib.CachedBmp_28 = function() {
+(lib.CachedBmp_115 = function() {
 	this.initialize(ss["confMaceta_atlas_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_27 = function() {
+(lib.CachedBmp_114 = function() {
 	this.initialize(ss["confMaceta_atlas_1"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
@@ -166,10 +166,10 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Layer_1
-	this.instance = new lib.CachedBmp_30();
+	this.instance = new lib.CachedBmp_117();
 	this.instance.setTransform(-356,-864.55,0.5,0.5);
 
-	this.instance_1 = new lib.CachedBmp_29();
+	this.instance_1 = new lib.CachedBmp_116();
 	this.instance_1.setTransform(-400,-967,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.instance}]}).wait(1));
@@ -493,10 +493,10 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(54).to({_off:false},0).to({x:686.85},14).wait(58).to({startPosition:0},0).wait(1));
 
 	// escribir1
-	this.instance_1 = new lib.CachedBmp_27();
+	this.instance_1 = new lib.CachedBmp_114();
 	this.instance_1.setTransform(441.85,944.35,0.5,0.5);
 
-	this.instance_2 = new lib.CachedBmp_28();
+	this.instance_2 = new lib.CachedBmp_115();
 	this.instance_2.setTransform(441.85,944.35,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_1}]},54).to({state:[{t:this.instance_2}]},72).wait(1));
@@ -530,8 +530,8 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/CachedBmp_30.png", id:"CachedBmp_30"},
-		{src:"images/CachedBmp_29.png", id:"CachedBmp_29"},
+		{src:"images/CachedBmp_117.png", id:"CachedBmp_117"},
+		{src:"images/CachedBmp_116.png", id:"CachedBmp_116"},
 		{src:"images/confMaceta_atlas_1.png", id:"confMaceta_atlas_1"}
 	],
 	preloads: []

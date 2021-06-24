@@ -219,7 +219,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/camara_atlas_1.png?1624558274171", id:"camara_atlas_1"}
+		{src:"images/camara_atlas_1.png", id:"camara_atlas_1"}
 	],
 	preloads: []
 };

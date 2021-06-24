@@ -27,19 +27,19 @@ lib.ssMetadata = [
 
 
 
-(lib.CachedBmp_26 = function() {
-	this.initialize(img.CachedBmp_26);
+(lib.CachedBmp_113 = function() {
+	this.initialize(img.CachedBmp_113);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,826,2072);
 
 
-(lib.CachedBmp_25 = function() {
-	this.initialize(img.CachedBmp_25);
+(lib.CachedBmp_112 = function() {
+	this.initialize(img.CachedBmp_112);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,1614,3868);
 
 
-(lib.CachedBmp_24 = function() {
+(lib.CachedBmp_111 = function() {
 	this.initialize(ss["ayuda_atlas_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
@@ -89,10 +89,10 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Layer_1
-	this.instance = new lib.CachedBmp_26();
+	this.instance = new lib.CachedBmp_113();
 	this.instance.setTransform(-356,-864.55,0.5,0.5);
 
-	this.instance_1 = new lib.CachedBmp_25();
+	this.instance_1 = new lib.CachedBmp_112();
 	this.instance_1.setTransform(-400,-967,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.instance}]}).wait(1));
@@ -138,7 +138,7 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Layer_1
-	this.instance = new lib.CachedBmp_24();
+	this.instance = new lib.CachedBmp_111();
 	this.instance.setTransform(-207.1,-200.15,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
@@ -489,8 +489,8 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/CachedBmp_26.png", id:"CachedBmp_26"},
-		{src:"images/CachedBmp_25.png", id:"CachedBmp_25"},
+		{src:"images/CachedBmp_113.png", id:"CachedBmp_113"},
+		{src:"images/CachedBmp_112.png", id:"CachedBmp_112"},
 		{src:"images/ayuda_atlas_1.png", id:"ayuda_atlas_1"}
 	],
 	preloads: []

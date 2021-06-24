@@ -27,14 +27,14 @@ lib.ssMetadata = [
 
 
 
-(lib.CachedBmp_2 = function() {
-	this.initialize(img.CachedBmp_2);
+(lib.CachedBmp_121 = function() {
+	this.initialize(img.CachedBmp_121);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,826,2072);
 
 
-(lib.CachedBmp_1 = function() {
-	this.initialize(img.CachedBmp_1);
+(lib.CachedBmp_120 = function() {
+	this.initialize(img.CachedBmp_120);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,1614,3868);
 
@@ -105,10 +105,10 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Layer_1
-	this.instance = new lib.CachedBmp_2();
+	this.instance = new lib.CachedBmp_121();
 	this.instance.setTransform(-356,-864.55,0.5,0.5);
 
-	this.instance_1 = new lib.CachedBmp_1();
+	this.instance_1 = new lib.CachedBmp_120();
 	this.instance_1.setTransform(-400,-967,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.instance}]}).wait(1));
@@ -444,9 +444,9 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/CachedBmp_2.png?1624558391576", id:"CachedBmp_2"},
-		{src:"images/CachedBmp_1.png?1624558391576", id:"CachedBmp_1"},
-		{src:"images/estadoPlanta_atlas_1.png?1624558391545", id:"estadoPlanta_atlas_1"}
+		{src:"images/CachedBmp_121.png", id:"CachedBmp_121"},
+		{src:"images/CachedBmp_120.png", id:"CachedBmp_120"},
+		{src:"images/estadoPlanta_atlas_1.png", id:"estadoPlanta_atlas_1"}
 	],
 	preloads: []
 };
